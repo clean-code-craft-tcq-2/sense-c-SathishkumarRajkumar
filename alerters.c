@@ -1,11 +1,11 @@
 #include "alerters.h"
 
-alerter_funcptr emailAlerter(void)
+void emailAlerter(void)
 {
 	emailAlertCallCount = 1;
 }
 
-alerter_funcptr ledAlerter(void)
+void ledAlerter(void)
 {
 	ledAlertCallCount = 1;
 }
