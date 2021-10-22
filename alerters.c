@@ -1,12 +1,12 @@
 #include "alerters.h"
 
-int emailAlerter(void)
+alerter_funcptr emailAlerter(void)
 {
 	emailAlertCallCount = 1;
 	return emailAlertCallCount;
 }
 
-int ledAlerter(void)
+alerter_funcptr ledAlerter(void)
 {
 	ledAlertCallCount = 1;
 	return ledAlertCallCount;
