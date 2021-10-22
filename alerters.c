@@ -9,5 +9,5 @@ int emailAlerter(void)
 int ledAlerter(void)
 {
 	ledAlertCallCount = 1;
-	retunr ledAlertCallCount;
+	return ledAlertCallCount;
 }
