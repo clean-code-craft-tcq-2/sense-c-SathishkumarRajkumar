@@ -27,6 +27,7 @@ TEST_CASE("average is NaN for empty array") {
     /*REQUIRE(isnan(computedStats.average) == 1);*/
     /*REQUIRE(computedStats.max != computedStats.max);*/
     /*REQUIRE(computedStats.min != computedStats.min);*/
+}
 
 TEST_CASE("raises alerts when max is greater than threshold") {
     // create additional .c and .h files
