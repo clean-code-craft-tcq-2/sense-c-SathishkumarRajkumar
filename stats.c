@@ -11,7 +11,7 @@ struct Stats compute_statistics(const float* numberset, int setlength)
 	
 	float sum = 0.0;
 	
-	if ((setlength !=0) && (&numberset != NULL ))
+	if ((setlength !=0) && (*numberset != NULL ))
 	{	
 	for (int i=0; i<setlength; i++)
 	{
