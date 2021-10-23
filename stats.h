@@ -3,8 +3,8 @@ struct Stats
 	float average, min, max;
 };
 
-extern int emailAlertCallCount;
-extern int ledAlertCallCount;
+extern int emailAlertCallCount = 0;
+extern int ledAlertCallCount = 0;
 
 struct Stats compute_statistics(const float* numberset, int setlength);
 
