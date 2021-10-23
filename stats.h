@@ -3,6 +3,9 @@ struct Stats
 	float average, min, max;
 };
 
+extern int emailAlertCallCount;
+extern int ledAlertCallCount;
+
 struct Stats compute_statistics(const float* numberset, int setlength);
 
 typedef void (*alerter_funcptr)();
