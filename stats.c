@@ -41,11 +41,11 @@ struct Stats compute_statistics(const float* numberset, int setlength)
 	return s;
 }
 
-void check_and_alert(float maxThreshold, alerter_funcptr alerters[], struct Stats computedStats)
+void check_and_alert(float maxThreshold, alerter_funcptr *alerters, struct Stats computedStats)
 {
 	printf("Function called");
 	if (maxThreshold < computedStats.max)
 	{
-		*alerters;
+		alerters;
 	}
 }
