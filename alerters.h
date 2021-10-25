@@ -1,3 +1,3 @@
 
-void emailAlerter(void);
-void ledAlerter(void);
+int emailAlerter(void);
+int ledAlerter(void);
