@@ -3,14 +3,12 @@
 int emailAlertCallCount;
 int ledAlertCallCount;
 
-int emailAlerter(void)
+void emailAlerter(void)
 {
-	int emailCount = 1;
-	return emailCount;
+	emailAlertCallCount = 1;
 }
 
-int ledAlerter(void)
+void ledAlerter(void)
 {
-	int ledCount = 1;
-	return ledCount;
+	ledAlertCallCount = 1;
 }
