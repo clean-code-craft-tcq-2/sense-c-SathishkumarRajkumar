@@ -46,7 +46,6 @@ void check_and_alert(float maxThreshold, alerter_funcptr* alerters, struct Stats
 	printf("Function called");
 	if (maxThreshold < computedStats.max)
 	{
-		alerters[0];
-		alerters[1];
+		alerters;
 	}
 }
