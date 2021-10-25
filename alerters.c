@@ -5,12 +5,12 @@ int ledAlertCallCount;
 
 int emailAlerter(void)
 {
-	emailAlertCallCount = 1;
-	return emailAlertCallCount;
+	int emailCount = 1;
+	return emailCount;
 }
 
 int ledAlerter(void)
 {
-	ledAlertCallCount = 1;
-	return ledAlertCallCount;
+	int ledCount = 1;
+	return ledCount;
 }
