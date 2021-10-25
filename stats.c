@@ -16,19 +16,19 @@ struct Stats compute_statistics(const float* numberset, int setlength)
 	{
             if (s.max < numberset[i])
 	    {
-	        s.max = numberset[i];
+	        s.max = numberset[i]; /* Stores the max float value from array */
 	    }
             if (s.min >= numberset[i])
 	    {
-		s.min = numberset[i];
+		s.min = numberset[i]; /* Stores the minimum float value from array */
             }			
 	    sum += numberset[i];
 	}	
-	s.average = sum/(float)setlength; 
+	s.average = sum/(float)setlength; /* Stores the average of all float values from array */
     }
     else  /* When array is empty or NULL */
     {
-        s.average = sum/(float)setlength;
+        s.average = sum/(float)setlength; /* Sets NaN if array contains non-valid elements */
 	s.min += s.average;
 	s.max += s.average;
     }
