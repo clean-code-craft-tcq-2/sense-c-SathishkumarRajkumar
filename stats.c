@@ -10,7 +10,7 @@ struct Stats compute_statistics(const float* numberset, int setlength)
     s.max = 0.0;
     float sum = 0.0;
 	
-    if ((setlength !=0) && (numberset != NULL ))
+    if ((setlength !=0) && (numberset != NULL )) /* When array contains non zero float values */
     {	
         for (int i=0; i<setlength; i++)
 	{
@@ -26,7 +26,7 @@ struct Stats compute_statistics(const float* numberset, int setlength)
 	}	
 	s.average = sum/(float)setlength; 
     }
-    else
+    else  /* When array is empty or NULL */
     {
         s.average = sum/(float)setlength;
 	s.min += s.average;
